@@ -1,0 +1,110 @@
+[dir="ltr"] .navber-index .offcanvas-header {
+    justify-content: right;
+}
+[dir="rtl"] .navber-index .offcanvas-header {
+    justify-content: left;
+}
+[dir="ltr"] .slider-index .carousel-indicators {
+    right: unset;
+}
+[dir="ltr"] .title-header span::after{
+    left: 54px;
+}
+[dir="rtl"] .title-header span::after{
+    right: 54px;
+}
+[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before {
+float: right;
+}
+[dir="ltr"] .carousel-Offers .car-con-next,[dir="ltr"] .carousel-Offers .car-con-prev{
+    float: right;
+}
+[dir="rtl"] .carousel-Offers .car-con-next,[dir="rtl"] .carousel-Offers .car-con-prev{
+    float: left;
+}
+[dir="ltr"] .title-project::after{
+    left: 54px;
+}
+[dir="rtl"] .title-project::after{
+    right: 54px;
+}
+
+
+@media (min-width: 990px) {
+    [dir="ltr"] .col-img-loction{
+        justify-content: right;
+    }
+
+    [dir="rtl"] .col-img-loction{
+        justify-content: left;
+    }
+}
+@media (max-width: 990px) {
+    [dir="ltr"] .col-img-loction, .col-deftion-lction{
+        justify-content: center;
+        text-align: center;
+    }
+    [dir="rtl"] .col-img-loction{
+        justify-content: center;
+    }
+
+}
+
+[dir="ltr"] .data-details h6 span{
+    padding-right: 10px;
+}
+[dir="rtl"] .data-details h6 span{
+    padding-left: 10px;
+}
+@media (min-width: 1025px) {
+[dir="ltr"] .slider-carousel-project .carousel-indicators [data-bs-target]{
+    text-align: left;
+    margin-left: 39%;
+    margin-right: 0px;
+}
+[dir="rtl"] .slider-carousel-project .carousel-indicators [data-bs-target]{
+    text-align: right;
+    margin-right: 82px;
+    margin-left: 0px !important;
+    display: flex;
+}
+}
+[dir="ltr"] .carousel-indicators .active .links_name::before{
+    margin-left: -12px;
+}
+[dir="rtl"] .carousel-indicators .active .links_name::before{
+    margin-right: -12px;
+}
+[dir="rtl"] .row-check .form-check-input {
+margin-left: 20px;
+margin-right: 0px;
+}
+[dir="ltr"] .carousel-caption h6{
+    margin-left: 12%;
+}
+[dir="rtl"] .carousel-caption h6{
+    margin-right: 12%;
+}
+[dir="ltr"] .component-team-new  .owl-stage-outer{
+    margin-left: 6%;
+}
+[dir="rtl"] .component-team-new .owl-stage-outer{
+    margin-right: 6%;
+}
+[dir="ltr"] .img-chack{
+margin-right: 10px;
+}
+[dir="rtl"] .img-chack{
+    margin-left: 10px;
+    }
+    [dir="rtl"] .card-new .card-body{
+        text-align: right;
+    } 
+    [dir="ltr"] .component-team-Project  .owl-nav{
+        right: 4%;
+
+    }
+    [dir="rtl"] .component-team-Project  .owl-nav{
+        left: 4%;
+
+    }
