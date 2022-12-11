@@ -458,7 +458,7 @@ background-color: #000000;
     object-fit: cover;
     object-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #00000000;
+    background-color: #0000003b;
 
 }
 .slider-index .carousel-indicators {
@@ -2414,7 +2414,7 @@ display: none;
     text-transform: capitalize;
     font-size: 16px;
     line-height: 27px;
-    color: #B29A50;
+    color: #fff;
   }
   .slider-carousel-project .carousel-caption h5{
 text-transform: capitalize;
@@ -2422,9 +2422,9 @@ font-size: 60px;
 line-height: 51px;
 font-weight: 500;
   }
-  .slider-carousel-project .carousel-caption h5 span{
+  /* .slider-carousel-project .carousel-caption h5 span{
     color: #B29A50;
-  }
+  } */
 /*end-project-details*/
 /**/
 
