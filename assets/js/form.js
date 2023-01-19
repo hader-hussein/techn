@@ -1,4 +1,22 @@
 //conent-us//
+$(document).ready(function(){
+  'use strict';
+  var windoh = $(window).height();
+  $('body').height(windoh);
+
+ $(".component-stert  .component--intro ").fadeOut(2000,function()
+   {
+       $(this).parent().fadeOut(1000,function(){
+       $("body").css("overflow","auto");
+       $(this).remove();
+       $('body').height("100%");
+   });
+   
+ }
+ 
+  );
+});
+/***** */
 (() => {
     'use strict'
   
@@ -41,25 +59,28 @@ for (let j = 0; j<menulengthabout; j++){
 function toggleText(){
   $('.btn-colik').toggleClass('transform-active');
   var x = document.getElementsByClassName("overlay-caption");
-  var m = document.getElementsByClassName("carousel-caption-one");
+  var m = document.getElementsByClassName("carousel-defintion");
   Array.from(x).forEach((xl) => {
     if ((xl.style.display == 'none')) {
       xl.style.display = "block";
+      xl.style.transition=" transform .6s ease-in-out";
       
   
     } else {
       xl.style.display = "none";
-      
+      xl.style.transition=" transform .6s ease-in-out";
+
     }
   })
   Array.from(m).forEach((ml) => {
     if ((ml.style.display == 'none')) {
       ml.style.display = "block";
-      
+      ml.style.transition="transform .6s ease-in-out";
   
     } else {
       ml.style.display = "none";
-      
+      ml.style.transition="transform .6s ease-in-out";
+
     }
   })
  
@@ -177,3 +198,20 @@ $(window).scroll(function(){
   $('.navber-index .nav-item .nav-link').removeClass('active').removeAttr('aria-current');
   $('a[href="' + location.pathname + '"]').closest('li').addClass('active').attr('aria-current', 'page'); 
   /*ative*/
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
